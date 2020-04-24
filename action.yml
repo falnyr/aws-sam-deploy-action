@@ -1,5 +1,5 @@
 name: 'AWS SAM Deploy'
-description: 'Deploy SAM Stack'
+description: 'Deploys AWS SAM Stack'
 branding:
   icon: 'upload-cloud'
   color: 'orange'

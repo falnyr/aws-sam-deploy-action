@@ -30,6 +30,15 @@ jobs:
 
 ### Environment Variables
 
+| Name     | Type     | Description                        | Default        |
+|----------|----------|------------------------------------|----------------|
+| TEMPLATE | String   | YAML file containing AWS SAM Stack | `template.yml` |
+| 2        | Jane Doe |                                    |                |
+| 3        | John Roe |                                    |                |
+
+
+
+
 * `TEMPLATE` - [Optional]. YML file containing CloudFormation Stack.
   * Type: `string`
   * Default: `template.yml`

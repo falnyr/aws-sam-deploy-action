@@ -18,10 +18,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
-    - uses: actions/setup-node@v1
-      with:
-        node-version: '10.x'
-    - run: for d in */ ; do cd $d && npm install --no-package-lock --loglevel=error && cd .. ; done
     - uses: falnyr/aws-sam-deploy-action@v1.0.0
       env:
         TEMPLATE: 'template.yaml'

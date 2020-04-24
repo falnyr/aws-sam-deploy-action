@@ -21,7 +21,7 @@ jobs:
     - uses: falnyr/aws-sam-deploy-action@v1.0.0
       env:
         TEMPLATE: 'template.yaml'
-        AWS_STACK_NAME: prod-${{ github.actor }}-resourceful
+        AWS_STACK_NAME: my-serverless-application
         AWS_REGION: 'us-east-1'
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}

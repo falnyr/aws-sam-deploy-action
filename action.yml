@@ -1,5 +1,6 @@
 name: 'AWS SAM Deploy'
 description: 'Deploys AWS SAM Stack'
+author: 'Jan Alfred Richter <falnyr@gmail.com>'
 branding:
   icon: 'upload-cloud'
   color: 'orange'

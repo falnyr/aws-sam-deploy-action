@@ -64,7 +64,7 @@ if [[ ! -z "$TAGS" ]]; then
     TAGS="--tags $TAGS"
 fi
 
-mkdir ~/.aws
+mkdir -p ~/.aws
 touch ~/.aws/credentials
 touch ~/.aws/config
 

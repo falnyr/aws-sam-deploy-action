@@ -46,6 +46,10 @@ if [[ $FORCE_UPLOAD == true ]]; then
     FORCE_UPLOAD="--force-upload"
 fi
 
+if [[ $NO_FAIL_EMPTY_CHANGESET == true ]]; then
+    NO_FAIL_EMPTY_CHANGESET="--no-fail-on-empty-changeset"
+fi
+
 if [[ $USE_JSON == true ]]; then
     USE_JSON="--use-json"
 fi
@@ -78,4 +82,4 @@ output = text
 region = $AWS_REGION" > ~/.aws/config
 
 aws cloudformation package --template-file $TEMPLATE --output-template-file serverless-output.yaml --s3-bucket $AWS_DEPLOY_BUCKET $AWS_BUCKET_PREFIX $FORCE_UPLOAD $USE_JSON
-aws cloudformation deploy --template-file serverless-output.yaml --stack-name $AWS_STACK_NAME $CAPABILITIES $PARAMETER_OVERRIDES $TAGS
+aws cloudformation deploy --template-file serverless-output.yaml --stack-name $AWS_STACK_NAME $CAPABILITIES $PARAMETER_OVERRIDES $TAGS $NO_FAIL_EMPTY_CHANGESET

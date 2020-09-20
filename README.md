@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
-    - uses: falnyr/aws-sam-deploy-action@v1.0.0
+    - uses: falnyr/aws-sam-deploy-action@v1.2.1
       env:
         TEMPLATE: 'template.yaml'
         AWS_STACK_NAME: my-serverless-application

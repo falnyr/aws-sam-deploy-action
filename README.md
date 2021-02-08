@@ -8,7 +8,7 @@ This action is forked from [r0zar/sam-deploy-action](https://github.com/r0zar/sa
 
 ```yml
 name: "Deploy SAM Stack to Production"
-on: 
+on:
   push:
     branches:
     - master
@@ -45,6 +45,8 @@ jobs:
 * `AWS_SECRET_ACCESS_KEY` - [**Required**]. AWS Secret Access Key.
   * Type: `string`
 * `AWS_DEPLOY_BUCKET` - [**Required**]. AWS S3 Bucket where the Stack package is going to be stored.
+  * Type: `string`
+* `AWS_PACKAGE_BUCKET` - [**Required**]. AWS S3 Bucket where the Stack template is going to be stored.
   * Type: `string`
 * `AWS_BUCKET_PREFIX` - [Optional]. S3 Bucket's folder where to upload the package.
   * Type: `string`

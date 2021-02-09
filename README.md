@@ -46,8 +46,6 @@ jobs:
   * Type: `string`
 * `AWS_DEPLOY_BUCKET` - [**Required**]. AWS S3 Bucket where the Stack package is going to be stored.
   * Type: `string`
-* `AWS_PACKAGE_BUCKET` - [**Required**]. AWS S3 Bucket where the Stack template is going to be stored.
-  * Type: `string`
 * `AWS_BUCKET_PREFIX` - [Optional]. S3 Bucket's folder where to upload the package.
   * Type: `string`
 * `FORCE_UPLOAD` - [Optional]. Whether to override existing packages in case they are an exact match.

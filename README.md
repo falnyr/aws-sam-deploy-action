@@ -8,7 +8,7 @@ This action is forked from [r0zar/sam-deploy-action](https://github.com/r0zar/sa
 
 ```yml
 name: "Deploy SAM Stack to Production"
-on: 
+on:
   push:
     branches:
     - master
